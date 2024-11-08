@@ -1,0 +1,58 @@
+.loading {
+    background-color: red;
+    animation: loading 9s linear 1 normal;
+}
+
+@keyframes loading {
+    0% {
+        width: 0%;
+    }
+
+    100% {}
+}
+
+.ghostride {
+    animation: ghostride 7s linear 1 normal;
+}
+
+@keyframes ghostride {
+    0% {
+        width: 0%;
+        ;
+    }
+
+    100% {
+        width: 400px;
+    }
+}
+
+.fire {
+    animation: fire 70ms linear 6s infinite normal;
+}
+
+@keyframes fire {
+    0% {
+        left: 28px;
+    }
+
+    100% {
+        left: 34px;
+    }
+}
+
+@media (max-width:640px) {
+    @keyframes ghostride {
+        0% {
+            width: 0%;
+            ;
+        }
+
+        100% {
+            width: 250px;
+        }
+    }
+
+        .ghostride {
+            animation: ghostride 6s linear 1 normal;
+        }
+}
